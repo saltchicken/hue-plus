@@ -46,10 +46,10 @@ Hue_plus can easily be integrated into existing software. The entire codebase is
 
 ```
 import serial
-from hue_plus import hue
+import hue_plus
 
 ser = serial.Serial(args.port, 256000)
-hue.fixed(ser, 0, 0, 'FF0000') # First argument is ser, second is whether to bring up GUI (0=no), third is channel (0=both) and last is the color
+hue_plus.fixed(ser, 0, 0, 'FF0000') # First argument is ser, second is whether to bring up GUI (0=no), third is channel (0=both) and last is the color
 ```
 
 ### Common args
